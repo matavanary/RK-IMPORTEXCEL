@@ -73,27 +73,31 @@
 			<thead>
 				  	<tr>
 				  		<th>ID</th>
-				  		<th>Subject</th>
-				  		<th>Description</th>
-				  		<th>Unit</th>
-				  		<th>Semester</th>
+				  		<th>1</th>
+				  		<th>10</th>
+				  		<th>20</th>
+				  		<th>30</th>
+				  		<th>40</th>
+				  		<th>50</th>
 				 		
 				 
 				  	</tr>	
 				  </thead>
 			<?php
-				$SQLSELECT = "SELECT * FROM subject ";
+				$SQLSELECT = "SELECT * FROM subject2 ";
 				$result_set =  sqlsrv_query($conn, $SQLSELECT);
 				while($row = sqlsrv_fetch_array($result_set))
 				{
 				?>
 			
 					<tr>
-						<td><?php echo $row['SUBJ_ID']; ?></td>
-						<td><?php echo $row['SUBJ_CODE']; ?></td>
-						<td><?php echo $row['SUBJ_DESCRIPTION']; ?></td>
-						<td><?php echo $row['UNIT']; ?></td>
-						<td><?php echo $row['SEMESTER']; ?></td>
+						<td><?php echo $row['0']; ?></td>
+						<td><?php echo $row['1']; ?></td>
+						<td><?php echo $row['10']; ?></td>
+						<td><?php echo $row['20']; ?></td>
+						<td><?php echo $row['30']; ?></td>
+						<td><?php echo $row['40']; ?></td>
+						<td><?php echo $row['50']; ?></td>
 					
 
 					</tr>
