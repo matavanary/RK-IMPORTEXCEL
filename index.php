@@ -84,7 +84,7 @@
 				  	</tr>	
 				  </thead>
 			<?php
-				$SQLSELECT = "SELECT * FROM subject2 ";
+				$SQLSELECT = "SELECT * FROM subject2 WHERE F1 = 4";
 				$result_set =  sqlsrv_query($conn, $SQLSELECT);
 				while($row = sqlsrv_fetch_array($result_set))
 				{
